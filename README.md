@@ -8,19 +8,14 @@ sys.modules.pop('matplotlib')
 from matplotlib import pyplot as plt
  
  
-class Loot:
- pass
+#def lootr():
+ #np.random.normal(5)
  
-rare = Loot
-common = Loot
- 
-rare= [1,2,3,4,5,5,5,6,6,6,7,7,7,8,9,10]
-common= [1,1,1,2,2,2,3,3,3,4,5,6,7,8,9,10]
- 
-Mean_rare=np.mean(rare)
-Mean_common=np.mean(common)
- 
-STDV_rare=np.std(rare)
-STDV_common=np.std(common)
-print(STDV_rare)
-print(Mean_rare)
+
+
+rare=np.random.normal(6,2,(2,4))
+common=np.random.normal(2,2,(2,4))
+#rare loc=6,scale 2,size(2,4)
+#seed is the number of resets
+print(rare)
+print(common)
